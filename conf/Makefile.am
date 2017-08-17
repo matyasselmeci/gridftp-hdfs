@@ -8,3 +8,8 @@ dist_sysconfig_DATA = gridftp-hdfs gridftp-hdfs-environment-bootstrap
 envdir = $(datadir)/gridftp-hdfs
 dist_env_DATA = gridftp-hdfs-environment
 
+osgsysconfigdir = $(datadir)/osg/sysconfig
+dist_osgsysconfig_DATA = globus-gridftp-server-plugin
+
+gridftpddir = $(sysconfdir)/gridftp.d
+dist_gridftpd_DATA = gridftp.d/gridftp-hdfs.conf gridftp.d/gridftp-hdfs.osg-extensions.conf
